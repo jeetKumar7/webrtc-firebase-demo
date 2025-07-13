@@ -3,15 +3,7 @@ import "./style.css";
 import firebase from "firebase/app";
 import "firebase/firestore";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyD1XrZ89EouYxLG8DKF1vGN2WQSNtKP5iQ",
-  authDomain: "test-5d7ba.firebaseapp.com",
-  projectId: "test-5d7ba",
-  storageBucket: "test-5d7ba.firebasestorage.app",
-  messagingSenderId: "859011986219",
-  appId: "1:859011986219:web:3b7e3424beab67dac94b6e",
-  measurementId: "G-65VEND90ED",
-};
+const firebaseConfig = {};
 
 if (!firebase.apps.length) {
   firebase.initializeApp(firebaseConfig);
