@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
 body {
-  font-family: 'Syne Mono', monospace;
+  font-family: "Syne Mono", monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -20,4 +20,41 @@ video {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: white;
+  font-family: "Syne Mono", monospace;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#toggleCameraButton {
+  background-color: #e74c3c;
+}
+
+#toggleCameraButton:hover:not(:disabled) {
+  background-color: #c0392b;
+}
+
+#toggleMicButton {
+  background-color: #e67e22;
+}
+
+#toggleMicButton:hover:not(:disabled) {
+  background-color: #d35400;
 }
